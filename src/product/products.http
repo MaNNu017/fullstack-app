@@ -1,0 +1,40 @@
+### obtener todos los products
+GET http://localhost:3000/api/products
+
+### obtener un product
+GET http://localhost:3000/api/products/b05af906-b67a-45e9-8b4f-26af7e716513
+
+### crear un nuevo product
+POST http://localhost:3000/api/products
+Content-Type: application/json
+
+{
+"name": "Capsula de cafe",
+"description": "Cafe En Capsulas Espresso Sutil N5 10 Capsulas",
+"price": 300,
+"stock": 500
+}
+
+### modificar un product (PUT)
+PUT http://localhost:3000/api/products/b05af906-b67a-45e9-8b4f-26af7e716513
+Content-Type: application/json
+
+{
+"name": "Cafe molido premium",
+"description": "Blend de café premium tostado molido sin azúcar. 100% Tostado Natural Sin Azúcar.",
+"price": 200,
+"stock": 100
+}
+
+### modificar un product (PATCH)
+PATCH http://localhost:3000/api/products/b05af906-b67a-45e9-8b4f-26af7e716513
+Content-Type: application/json
+
+{
+"name": "Cafe Cappuccino instantaneo",
+"description": "Cafe Cappuccino Tradicional Repuesto x 125 gr",
+"price": 250
+}
+
+### borrar un product 
+DELETE http://localhost:3000/api/products/b05af906-b67a-45e9-8b4f-26af7e716513
